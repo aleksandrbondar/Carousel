@@ -15,8 +15,7 @@ To use Cool Slide, you need to include the following dependencies in your HTML f
 
 1. Clone the repository:
 
-git clone https://github.com/alexandrbondar/slider.git
-cd Slide
+git clone git@github.com:aleksandrbondar/Carousel.git
 
 2. Include the required CSS and JS files in your HTML:
 ```
