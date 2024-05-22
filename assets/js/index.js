@@ -1,4 +1,4 @@
-
+import { SwipeCarousel } from './swipe.js';
 const options = {
   containerIdName: '#carousel', // default: '#carousel', id of container for carousel
   slidesClassName: '.slide__item', // default: '.slide__item', class of slides in carousel
@@ -41,16 +41,5 @@ const options = {
   // }
 };
 
-function createCarousel(options) {
-  try {
-    const carousel = new SwipeCarousel(options);
-    console.log('SwipeCarousel available.');
-    return carousel;
-  } catch (error) {
-    console.log('SwipeCarousel not available. Falling back to Carousel.');
-    return new Carousel(options);
-  }
-}
-
-const carousel = createCarousel(options);
+const carousel = new SwipeCarousel(options);
 carousel.initCarousel();

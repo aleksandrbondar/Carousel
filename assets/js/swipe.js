@@ -1,4 +1,5 @@
-class SwipeCarousel extends Carousel {
+import { Carousel } from './carousel.js';
+export class SwipeCarousel extends Carousel {
   constructor(options = {}) {
     super(options)
   }
