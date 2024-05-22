@@ -1,0 +1,28 @@
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+.slide__item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: 1.5s;
+  font-size: 40px;
+  color: #fff;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+  }
+
+  &--active {
+    opacity: 1;
+    z-index: 1;
+  }
+}

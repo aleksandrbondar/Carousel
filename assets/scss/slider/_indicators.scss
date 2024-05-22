@@ -1,0 +1,35 @@
+.indicator {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 2;
+  opacity: 1;
+  transition: all 1s ease-out 1s;
+
+  &__item {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid black;
+    box-shadow:
+      0 0 10px #fff,
+      0 0 20px #fff;
+    margin: 0 5px;
+    z-index: 3;
+    opacity: 0.5;
+    cursor: pointer;
+    transform: scale(1);
+    transition: transform 0.5s ease-out;
+
+    &:hover {
+      transform: scale(1.25);
+    }
+
+    &--active {
+      background-color: black;
+      transform: scale(1.25);
+    }
+  }
+}
