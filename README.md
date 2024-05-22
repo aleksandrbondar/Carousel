@@ -19,14 +19,16 @@ git clone https://github.com/alexandrbondar/slider.git
 cd Slide
 
 2. Include the required CSS and JS files in your HTML:
-
+```
 <link rel="stylesheet" href="assets/css/style.css">
 <script src="assets/js/carousel.js"></script>
 <script src="assets/js/swipe.js"></script>
 <script src="assets/js/index.js"></script>
+```
 
 3. Add the HTML structure for the carousel:
 
+```
 <div class="carousel" id="carousel">
   <div class="slide" id="slide-container">
     <div class="slide__item"><img src="assets/img/1.jpg" alt="Image 1"></div>
@@ -34,10 +36,12 @@ cd Slide
     <!-- Add more slides as needed -->
   </div>
 </div>
+```
 
 4. Initialization
 To initialize the slider, use the following JavaScript code in your index.js:
 
+```
 const options = {
   containerIdName: '#carousel',
   slidesClassName: '.slide__item',
@@ -52,29 +56,33 @@ const options = {
   isPauseWhenMouseFocus: false,
 };
 
+
 const carousel = new SwipeCarousel(options);
 carousel.initCarousel();
+```
 
 ### Configuration Options
 The slider can be customized with the following options:
 
-Option	Type	Default Value	Description
-containerIdName	String	'#carousel'	The ID of the carousel container.
-slidesClassName	String	'.slide__item'	The class name of each slide.
-isAutoplayCarousel	Boolean	true	Enables or disables autoplay.
-AutoplayInterval	Number	10000	The interval between slide changes in milliseconds.
-isControlButtonsEnabled	Boolean	true	Shows or hides the control buttons (next/prev).
-isControlPlayPauseEnabled	Boolean	true	Shows or hides the play/pause button.
-isIndicatorsEnabled	Boolean	true	Shows or hides the slide indicators.
-isPauseAfterAction	Boolean	false	Pauses autoplay after user interaction.
-isAnimateButtonsHandler	Boolean	true	Enables or disables button animation on hover.
-isAnimateButtonAutoplayAndIndicators	Boolean	false	Enables or disables animation for indicators and autoplay button.
-isPauseWhenMouseFocus	Boolean	false	Pauses autoplay when the mouse is over the carousel.
-iconPause	String	'<i class="fas fa-pause"></i>'	HTML for the pause icon.
-iconPlay	String	'<i class="fas fa-play"></i>'	HTML for the play icon.
-iconPrev	String	'<i class="fas fa-angle-left"></i>'	HTML for the previous icon.
-iconNext	String	'<i class="fas fa-angle-right"></i>'	HTML for the next icon.
-iconDownload	String	'<i class="fa-solid fa-spinner"></i>'	HTML for the loading spinner icon.
+| Option | Type    | Default Value | Description                           |
+|--------|---------|---------------|---------------------------------------|
+| containerIdName | String  | '#carousel'    | The ID of the carousel container.    |
+| slidesClassName | String  | '.slide__item' | The class name of each slide.        |
+| isAutoplayCarousel | Boolean | true          | Enables or disables autoplay.        |
+| AutoplayInterval | Number  | 10000         | The interval between slide changes in milliseconds. |
+| isControlButtonsEnabled | Boolean | true     | Shows or hides the control buttons (next/prev). |
+| isControlPlayPauseEnabled | Boolean | true   | Shows or hides the play/pause button. |
+| isIndicatorsEnabled | Boolean | true        | Shows or hides the slide indicators. |
+| isPauseAfterAction | Boolean | false        | Pauses autoplay after user interaction. |
+| isAnimateButtonsHandler | Boolean | true    | Enables or disables button animation on hover. |
+| isAnimateButtonAutoplayAndIndicators | Boolean | false | Enables or disables animation for indicators and autoplay button. |
+| isPauseWhenMouseFocus | Boolean | false     | Pauses autoplay when the mouse is over the carousel. |
+| iconPause | String  | '<i class="fas fa-pause"></i>' | HTML for the pause icon. |
+| iconPlay | String  | '<i class="fas fa-play"></i>'   | HTML for the play icon. |
+| iconPrev | String  | '<i class="fas fa-angle-left"></i>' | HTML for the previous icon. |
+| iconNext | String  | '<i class="fas fa-angle-right"></i>' | HTML for the next icon. |
+| iconDownload | String | '<i class="fa-solid fa-spinner"></i>' | HTML for the loading spinner icon. |
+
 
 ### GitHub Branches
 Cool Slide is available in two different approaches, available on separate branches:
