@@ -15,14 +15,14 @@ export class SwipeCarousel extends Carousel {
 
   swipeStartHandler(e) {
     this.startPosX = e instanceof MouseEvent
-      ? e.pageX // MouseEvent
-      : e.changedTouches[0].pageX // TouchEvent
+      ? e.pageX
+      : e.changedTouches[0].pageX
   }
 
   swipeEndHandler(e) {
     this.endPosX = e instanceof MouseEvent
-      ? e.pageX // MouseEvent
-      : e.changedTouches[0].pageX // TouchEvent
+      ? e.pageX
+      : e.changedTouches[0].pageX
 
     if (this.endPosX - this.startPosX > 100) this.prevHandler()
     if (this.endPosX - this.startPosX < -100) this.nextHandler()
