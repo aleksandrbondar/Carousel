@@ -11,6 +11,7 @@ export class SwipeCarousel extends Carousel {
     this.container.addEventListener('mousedown', this.swipeStartHandler.bind(this))
     this.container.addEventListener('touchend', this.swipeEndHandler.bind(this))
     this.container.addEventListener('mouseup', this.swipeEndHandler.bind(this))
+    this.container.addEventListener('dragstart', (e) => e.preventDefault())
   }
 
   swipeStartHandler(e) {

@@ -19,6 +19,8 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+    user-drag: none;
+    user-select: none;
   }
 
   &--active {
