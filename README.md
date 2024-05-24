@@ -15,7 +15,9 @@ To use Cool Slide, you need to include the following dependencies in your HTML f
 
 1. Clone the repository:
 
+```
 git clone git@github.com:aleksandrbondar/Carousel.git
+```
 
 2. Include the required CSS and JS files in your HTML:
 
@@ -59,7 +61,9 @@ const options = {
   isPauseWhenMouseFocus: false,
 };
 ```
-# If You need carousel with swipes
+# If You need carousel with swipes use one of this way
+
+- With swipes
 Use the following JavaScript code in index.js
 
 ```
@@ -67,7 +71,7 @@ const carousel = new SwipeCarousel(options);
 carousel.initCarousel();
 ```
 
-# Or without swipes
+- Or without swipes
 Use the following JavaScript code in index.js
 
 ```
@@ -157,10 +161,16 @@ Cool Slide is available in two different approaches, available on separate branc
 To switch between branches, use the following commands:
 
 # For class-based implementation
+
+```
 git checkout classes-based
+```
 
 # For functional prototyping and inheritance
+
+```
 git checkout functional-prototyping
+```
 
 
 ### This project is licensed under the MIT License - see the LICENSE file for details.
