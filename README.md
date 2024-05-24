@@ -2,7 +2,7 @@
 
 Cool Slide is a lightweight, minimalist, and elegant carousel slider with smooth animations and extensive customization options. This project is designed with two different approaches available in separate GitHub branches: one using ES6 classes and constructor functions (this branch), and the other using functional prototyping and inheritance.
 
-## Getting Started
+# Getting Started
 
 ### Prerequisites
 
@@ -61,7 +61,7 @@ const options = {
   isPauseWhenMouseFocus: false,
 };
 ```
-# If You need carousel with swipes use one of this way
+### If You need carousel with swipes use one of this way
 
 - With swipes
 Use the following JavaScript code in index.js
@@ -152,7 +152,7 @@ const options = {
 ```
 
 
-### GitHub Branches
+# GitHub Branches
 Cool Slide is available in two different approaches, available on separate branches:
 
 1. Class-Based Implementation (this branch): Uses ES6 classes and constructor functions for a modern JavaScript approach.
@@ -160,20 +160,20 @@ Cool Slide is available in two different approaches, available on separate branc
 
 To switch between branches, use the following commands:
 
-# For class-based implementation
+### For class-based implementation
 
 ```
 git checkout classes-based
 ```
 
-# For functional prototyping and inheritance
+### For functional prototyping and inheritance
 
 ```
 git checkout functional-prototyping
 ```
 
 
-### This project is licensed under the MIT License - see the LICENSE file for details.
+# This project is licensed under the MIT License - see the LICENSE file for details.
 
 
 This `README.md` provides a comprehensive guide to setting up and customizing the slider, with clear instructions on initialization and configuration. It also highlights the two different implementation approaches available on separate branches.
