@@ -236,11 +236,11 @@ export class Carousel {
   }
 
   _loadListener(type) {
-    if (type === 'add') window.addEventListener('load', this.hideLoadingScreen.bind(this))
-    if (type === 'remove') window.removeEventListener('load', this.hideLoadingScreen.bind(this))
+    if (type === 'add') window.addEventListener('load', this._hideLoadingScreen.bind(this))
+    if (type === 'remove') window.removeEventListener('load', this._hideLoadingScreen.bind(this))
   }
 
-  hideLoadingScreen() {
+  _hideLoadingScreen() {
     this.container.classList.toggle('carousel--loading')
     setTimeout(() => this.container.querySelector('#loading-screen').remove(), 1000)
 
@@ -248,7 +248,7 @@ export class Carousel {
     if (this.isAutoplayCarousel) this._setAutoPlayInterval()
   }
 
-  initLoadingScreen() {
+  _initLoadingScreen() {
     this.container.classList.toggle('carousel--loading')
     this.container.insertAdjacentHTML('beforeend', `<div class="loading-screen" id="loading-screen">${this.FA_DOWNLOAD ?? ''}</div>`)
     this._loadListener('add')
@@ -256,7 +256,7 @@ export class Carousel {
 
   initCarousel() {
     this._initProps()
-    this.initLoadingScreen()
+    this._initLoadingScreen()
     !this.isControlButtonsEnabled || this._initControlItem();
     !this.isIndicatorsEnabled || this._initIndicatorItem();
     this._initElements()
