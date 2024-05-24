@@ -157,10 +157,14 @@ Cool Slide is available in two different approaches, available on separate branc
 To switch between branches, use the following commands:
 
 # For class-based implementation
+```
 git checkout classes-based
+```
 
 # For functional prototyping and inheritance
+```
 git checkout functional-prototyping
+```
 
 
 ### This project is licensed under the MIT License - see the LICENSE file for details.
