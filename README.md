@@ -15,7 +15,9 @@ To use Cool Slide, you need to include the following dependencies in your HTML f
 
 1. Clone the repository:
 
+```
 git clone git@github.com:aleksandrbondar/Carousel.git
+```
 
 2. Include the required CSS and JS files in your HTML:
 
@@ -25,6 +27,8 @@ git clone git@github.com:aleksandrbondar/Carousel.git
 ```
 
 3. Add the HTML structure for the carousel:
+
+- Body of slider
 
 ```
 <div class="carousel" id="carousel">
@@ -36,15 +40,31 @@ git clone git@github.com:aleksandrbondar/Carousel.git
 </div>
 ```
 
-4. Initialization
+- If You need carousel with swipes
 
-To initialize the slider, use the following JavaScript code in index.js:
+Use the following JavaScript code in index.html
 
 ```
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/swipe.js"></script>
+  <script src="assets/js/index.js"></script>
+```
 
-import { SwipeCarousel } from './swipe.js'
-import { Carousel } from './carousel.js'
+- Or without swipes
 
+Use the following JavaScript code in index.html
+
+```
+  <script src="assets/js/carousel.js"></script>
+  <script src="assets/js/index.js"></script>
+```
+
+
+4. Initialization
+
+To initialize the slider, use the following JavaScript code options in index.js:
+
+```
 const options = {
   containerIdName: '#carousel',
   slidesClassName: '.slide__item',
@@ -59,21 +79,7 @@ const options = {
   isPauseWhenMouseFocus: false,
 };
 ```
-# If You need carousel with swipes
-Use the following JavaScript code in index.js
 
-```
-const carousel = new SwipeCarousel(options);
-carousel.initCarousel();
-```
-
-# Or without swipes
-Use the following JavaScript code in index.js
-
-```
-const carousel = new Carousel(options);
-carousel.initCarousel();
-```
 
 ### Configuration Options
 
@@ -165,7 +171,6 @@ git checkout classes-based
 ```
 git checkout functional-prototyping
 ```
-
 
 ### This project is licensed under the MIT License - see the LICENSE file for details.
 
