@@ -187,6 +187,10 @@ template {
 
   list-style: none;
 
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   text-decoration: none;
 }
 .carousel--loading .control,
@@ -225,6 +229,7 @@ template {
 
   -o-object-fit: cover;
      object-fit: cover;
+  user-drag: none;
 }
 .slide__item--active {
   z-index: 1;

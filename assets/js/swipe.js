@@ -11,6 +11,7 @@ SwipeCarousel.prototype._initListeners = function () {
   this.container.addEventListener('mousedown', this.swipeStartHandler.bind(this))
   this.container.addEventListener('touchend', this.swipeEndHandler.bind(this))
   this.container.addEventListener('mouseup', this.swipeEndHandler.bind(this))
+  this.container.addEventListener('dragstart', (e) => e.preventDefault())
 }
 
 SwipeCarousel.prototype.swipeStartHandler = function (e) {
